@@ -1,0 +1,71 @@
+{% extends 'base.html'%}
+
+{% block content%}
+<div>
+<h2 style="color:white;">Pick a mood and we'll choose a playlist for you!</h2>
+</div>
+<body style="background-color:black;">
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <a href ="{% url 'happy' %}" style="text-decoration:none;">
+      <div class="card text-white bg-dark mb-3">
+        <img src="https://i.pinimg.com/564x/20/9d/c8/209dc8034a1ca4032d499049205fa801.jpg" class="card-img-top" alt="..." width=500px height=300px>
+        <div class="card-body">
+          <h5 class="card-title">HAPPY &#128516;</h5>
+          <p class="card-text">
+            Hits to boost your mood and fill you with happiness!</p>
+        </div>
+      </div>
+    </a>
+    </div>
+  
+    <div class="col">
+      <a href ="{% url 'sad' %}" style="text-decoration:none;">
+      <div class="card text-white bg-dark mb-3">
+        <img src="https://i.pinimg.com/564x/35/68/21/3568211efbf08cf41dea5dea5c680f26.jpg" class="card-img-top" alt="..." width=500px height=300px>
+        <div class="card-body">
+          <h5 class="card-title">SAD &#128532;</h5>
+          <p class="card-text">Sad songs >>>>> Therapy session.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+
+    <div class="col">
+      <a href ="{% url 'angry' %}" style="text-decoration:none;">
+      <div class="card text-white bg-dark mb-3">
+        <img src="https://p.favim.com/orig/2018/12/29/red-anger-aesthetics-Favim.com-6726515.jpg" class="card-img-top" alt="..." width=500px height=300px>
+        <div class="card-body">
+          <h5 class="card-title">ANGRY &#128545;</h5>
+          <p class="card-text">The Pissed-Off Playlist That Will Channel Your Rage.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+  
+    <div class="col">
+      <a href="{% url 'party' %}" style="text-decoration:none;">
+      <div class="card text-white bg-dark mb-3">
+        <img src="https://st2.depositphotos.com/1235298/6349/v/950/depositphotos_63491253-stock-illustration-lets-have-a-party.jpg" class="card-img-top" alt="..." width=500px height=300px>
+        <div class="card-body">
+          <h5 class="card-title">PARTY &#128540; &#129395;</h5>
+          <p class="card-text">Kickstart your house party with these hits.</p>
+        </div>
+      </div>
+    </a>
+    </div>
+    <div class="col">
+        <a href ="{% url 'calm' %}" style="text-decoration:none;">
+        <div class="card text-white bg-dark mb-3">
+          <img src="https://i.pinimg.com/564x/15/58/d1/1558d1db53b3d865bec5f2ffa053cd3c.jpg" class="card-img-top" alt="..." width=500px height=300px>
+          <div class="card-body">
+            <h5 class="card-title">CALM &#128519; </h5>
+            <p class="card-text">Slow down and relax with a mix of calming music.</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</body>
+{%endblock%}
